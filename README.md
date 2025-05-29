@@ -1,6 +1,52 @@
-# RusticAI.art - SVG Gradient Generator
+# SVG Gradient Generator
 
-An intelligent SVG gradient generator powered by AI agents that transforms simple natural language instructions into beautiful SVG gradients.
+This project uses AI agents to modify SVG files by applying gradients based on natural language instructions.
+
+## Features
+
+- Natural language processing of gradient instructions
+- Multiple agent system for parsing, modifying, and validating SVG files
+- Support for linear and radial gradients
+- Intelligent instruction breakdown for complex requests
+- Rate limiting handling with automatic retries
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Create a `.env` file with your Google API key:
+   ```
+   GOOGLE_API_KEY=your_api_key_here
+   ```
+
+## Usage
+
+1. Place your input SVG file as `input.svg` in the project directory
+2. Run the script:
+   ```bash
+   python main.py
+   ```
+3. Enter your gradient instruction when prompted
+4. The modified SVG will be saved as `output.svg`
+
+## Example Instructions
+
+- "Change the red rectangle to have a vertical gradient from #ff0000 to #0000ff"
+- "Make the circle green, and give the rectangle a blue-yellow gradient"
+- "Add a vertical red-to-blue gradient to the red rectangle and make the circle have a radial white-to-black gradient"
+- "Give all rectangles sunset gradients"
+
+## Project Structure
+
+- `main.py` - Main entry point
+- `config.py` - Configuration and environment setup
+- `svg_utils.py` - SVG file handling utilities
+- `agents.py` - AI agent definitions
+- `instruction_processor.py` - Instruction processing logic
+- `requirements.txt` - Project dependencies
 
 ## 🎨 Overview
 
